@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Main {
+public class Is_your_horseshoe_on_the_other_hoof {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
