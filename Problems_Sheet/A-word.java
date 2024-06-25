@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Boy_or_Girl {
+public class word {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
