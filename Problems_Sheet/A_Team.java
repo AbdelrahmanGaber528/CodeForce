@@ -16,5 +16,6 @@ public class A_Team {
       }
     }
     System.out.println(values);
+    input.close();
   }
 }
