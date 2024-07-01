@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class A-Team {
+public class A_Team {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     int n = input.nextInt();
