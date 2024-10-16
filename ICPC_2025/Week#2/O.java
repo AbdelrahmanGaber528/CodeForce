@@ -1,22 +1,25 @@
 import java.util.Scanner;
 
-public class A{
+public class O {
     public static void main(String[] args) {
-        try (Scanner input = new Scanner(System.in)) {
-            int n = input.nextInt();
-            int m = input.nextInt();
-
-            // Start from the next even number if n is odd
-            if (n % 2 != 0) {
-                n++;
-            }
-
-            StringBuilder evenNumbers = new StringBuilder();
-            for (int i = n; i <= m; i += 2) {
-                evenNumbers.append(i).append(" ");
-            }
-
-            System.out.print(evenNumbers.toString().trim());
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int m = input.nextInt();
+        int maxLamoro = 0,maxOuda=0;
+        for (int i = 0; i < n; i++) {
+                int in = input.nextInt();
+                if(in>maxLamoro)
+                    maxLamoro = in;
         }
+        for (int i = 0; i < m; i++) {
+            int in = input.nextInt();
+            if(in>maxOuda)
+                maxOuda = in;
+        }
+        if(maxOuda>maxLamoro)
+            System.out.println("Ouda");
+        else
+            System.out.println("LAMORO");
+
     }
 }
