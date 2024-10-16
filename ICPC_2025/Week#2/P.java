@@ -1,22 +1,20 @@
 import java.util.Scanner;
 
-public class A{
+public class Main {
     public static void main(String[] args) {
-        try (Scanner input = new Scanner(System.in)) {
-            int n = input.nextInt();
-            int m = input.nextInt();
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        String sequence = input.next();
+        StringBuilder result = new StringBuilder(); // Use StringBuilder for efficient concatenation
 
-            // Start from the next even number if n is odd
-            if (n % 2 != 0) {
-                n++;
+        for (int i = 0; i < n * 2; i += 2) {
+            int num = sequence.charAt(i) - '0'; // Get the number of repetitions
+            char ch = sequence.charAt(i + 1); // Get the character to print
+            for (int j = 0; j < num; j++) {
+                result.append(ch); // Append to StringBuilder
             }
-
-            StringBuilder evenNumbers = new StringBuilder();
-            for (int i = n; i <= m; i += 2) {
-                evenNumbers.append(i).append(" ");
-            }
-
-            System.out.print(evenNumbers.toString().trim());
         }
+
+        System.out.print(result.toString()); // Print all at once
     }
 }
