@@ -1,22 +1,16 @@
 import java.util.Scanner;
 
-public class A{
+public class S {
     public static void main(String[] args) {
-        try (Scanner input = new Scanner(System.in)) {
-            int n = input.nextInt();
-            int m = input.nextInt();
-
-            // Start from the next even number if n is odd
-            if (n % 2 != 0) {
-                n++;
-            }
-
-            StringBuilder evenNumbers = new StringBuilder();
-            for (int i = n; i <= m; i += 2) {
-                evenNumbers.append(i).append(" ");
-            }
-
-            System.out.print(evenNumbers.toString().trim());
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        StringBuilder sr = new StringBuilder();
+        int i = n-1;
+        while (i!=0){
+            sr.append(0).append(" ");
+            i--;
         }
+        sr.append(n);
+        System.out.println(sr.toString().trim());
     }
 }
